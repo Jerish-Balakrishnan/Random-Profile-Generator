@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Profile Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <img v-bind:src="picture" v-bind:alt="firstName" :class="gender" />
+        <h1>Hello {{firstName }} {{ lastName }}</h1>
+        <p>{{ email }}</p>
+        <br>
+        <button :class="gender" @click="getUser()">Get Random Profile</button>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
